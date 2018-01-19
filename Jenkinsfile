@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('clone') {
       steps {
-        git 'git@github.com:hhhfly/123.git'
+        git(url: 'git@github.com:hhhfly/123.git', branch: 'master')
       }
     }
   }
